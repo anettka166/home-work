@@ -37,6 +37,14 @@ public class AutoFactory {
             vehicle.stop();
             System.out.println(vehicle.toString());
         }
+        RoboTruck roboTruck2 = new RoboTruck(4, "Toyota", "HT678", "Water", "Huge");
+        RoboVehicle[] vehicles2 = {roboCar1, roboCar2, roboBike1, roboBike2, roboBike3, roboTruck1};
+        for (int i = 0; i < vehicles.length ; i++) {
+            RoboVehicle vehicle = vehicles[i];
+            vehicle.startEngine();
+            vehicle.drive(20);
+            vehicle.accelerate(100);
+            vehicle.fly(10000);
 
 
 
